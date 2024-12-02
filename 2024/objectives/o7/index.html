@@ -898,7 +898,7 @@ I then ran a grep to identify where these finctions are being used.</p>
 </div>
 <p>It was clear that most of the code that handles the Lists was in 2 files located in "./smali_classes3/com/northpole/santaswipe" folder:<br/>
 <a href="../../artifacts/objectives/o7/DatabaseHelper.smali" target="_blank">DatabaseHelper.smali</a><br/>
-<a href="../artifacts/objectives/o7/" target="_blank" title="MainActivity$WebAppInterface.smali">MainActivity$WebAppInterface.smali</a><br/></p>
+<a href="../../artifacts/objectives/o7/WebAppInterface.smali" target="_blank">MainActivity$WebAppInterface.smali</a><br/></p>
 <p>Looking at the code, the following line makes what we are looking for very evident.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="o">-</span><span class="n">string</span><span class="w"> </span><span class="n">v3</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;SELECT Item FROM NormalList WHERE Item NOT LIKE \&#39;%Ellie%\&#39;&quot;</span>
 </code></pre></div>
@@ -932,8 +932,8 @@ Archive:<span class="w">  </span>SantaSwipeSecure.apks
 oot@kali:~/hhc2024/obj7/hard/apks-extracted#<span class="w"> </span>/opt/jadx/bin/jadx<span class="w"> </span>universal.apk<span class="w"> </span>-d<span class="w"> </span>./java-code
 </code></pre></div>
 <p>Looking for the source code, we can located it in "./sources/com/northpole/santaswipe" folder, with the two main files being:<br/>
-<a href="../../artifacts/objectives/o7/DatabaseHelper.java" target="_blank">MainActivity.java</a><br/>
-<a href="../../artifacts/objectives/o7/DatabaseHelper.java" target="_blank">"DatabaseHelper.java"</a><br/></p>
+<a href="../../artifacts/objectives/o7/MainActivity.java" target="_blank">MainActivity.java</a><br/>
+<a href="../../artifacts/objectives/o7/DatabaseHelper.java" target="_blank">DatabaseHelper.java</a><br/></p>
 <p>The DatabaseHelper.java file includes some encrypted data which we need to decrypt. As explained in the hint about encryption and obfuscation, we can find the encryptionKey and iv in  the android resource file:<br/>
 <a href="../../artifacts/objectives/o7/strings.xml" target="_blank">strings.xml</a><br/></p>
 <div class="highlight"><pre><span></span><code><span class="n">String</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">context</span><span class="p">.</span><span class="na">getString</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">string</span><span class="p">.</span><span class="na">ek</span><span class="p">);</span>
