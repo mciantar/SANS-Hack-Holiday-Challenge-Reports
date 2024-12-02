@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>OSD Coordinates</name>
+    <description>KML file for mapping out OSD coordinates with longitude, latitude, and height.</description>
+    <Placemark>
+      <name>Point 1</name>
+      <Point>
+        <coordinates>144.8567879816271,-37.42277804,329.1721074691694</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Point 2</name>
+      <Point>
+        <coordinates>142.4357677725014,-38.05691694,136.9853073940529</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Point 3</name>
+      <Point>
+        <coordinates>143.9329094555584,-37.8021747,377.5016249149292</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Point 4</name>
+      <Point>
+        <coordinates>142.2754454646221,-38.06824992,143.2939472276593</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Point 5</name>
+      <Point>
+        <coordinates>141.7563523,-34.52324587,61.14087621810435</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Point 6</name>
+      <Point>
+        <coordinates>145.5138593,-36.74357572,168.6693280467137</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Point 7</name>
+      <Point>
+        <coordinates>144.7459942,-37.89721189,4.240033669814256</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Point 8</name>
+      <Point>
+        <coordinates>145.8966329539992,-37.0070215,303.1828443856635</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
